@@ -27,4 +27,26 @@ def fibonacci2(number):
 
 
 
+def ruutvõrrand(a,b,c):
+
+    import math
+    
+    valem1 = (b**2-4*a*c)
+    if valem1 > 0: 
+        valem1 = math.sqrt(valem1)
+        valem1 = (-b+(valem1))
+        valem1 = valem1/(2*a)
+    else:
+        valem1 = 'puudub'
+
+
+    valem2 = (b**2-4*a*c)
+    if valem2 > 0: 
+        valem2 = math.sqrt(valem2)
+        valem2 = (-b-(valem2))
+        valem2 = valem2/(2*a)
+    else:
+        valem2 = 'puudub'
+
+    print ("X1={} ja X2={}".format(valem1, valem2))
     
