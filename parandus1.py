@@ -5,8 +5,9 @@ while a<5:
         while b<a:
                 print "$",
                 b=b+1
-                if b==a:
-                	print " "
+                
+                if b == a:
+			print " ",
 		
         b=5
         while a<b:
