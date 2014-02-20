@@ -1,6 +1,6 @@
 raamatud= {0:{"raamat":"dsh",
            "autor":"hffh",
-           "väljalaskeaasta":"dfhdfh"
+           "v2ljalaskeaasta":"dfhdfh"
 }}
 
 def lisamine():
@@ -8,13 +8,13 @@ def lisamine():
     
     raamat_sisestus=raw_input("Sisesta raamat: ")
     autor_sisestus=raw_input("Sisesta autor: ")
-    väljalaskeaasta_sisestus=raw_input("Sisesta väljalaskeaasta: ")
+    v2ljalaskeaasta_sisestus=raw_input("Sisesta v2ljalaskeaasta: ")
     if not raamat_sisestus:
         raamat_sisestus="--"
-    if not autor_sisestus:    
+    if not autor_sisestus:
         autor_sisestus="--"
-    if not väljalaskeaasta_sisestus:    
-        väljalaskeaasta_sisestus="--"
+    if not v2ljalaskeaasta_sisestus:
+        v2ljalaskeaasta_sisestus="--"
     index = len(raamatud)
 
     uus_index = len(raamatud)
@@ -25,7 +25,7 @@ def lisamine():
         else:
             break
     
-    raamatud[uus_index] = {"raamat":raamat_sisestus, "autor":autor_sisestus, "väljalaskeaasta":väljalaskeaasta_sisestus}
+    raamatud[uus_index] = {"raamat":raamat_sisestus, "autor":autor_sisestus, "v2ljalaskeaasta":v2ljalaskeaasta_sisestus}
 def vaatamine():
     global raamatud
     
@@ -48,12 +48,12 @@ def kustutamine():
 
 def muuda():
     kirje = int(raw_input("Kirje id: "))
-    võti = raw_input("Võti: ")
-    väärtus = raw_input("Väärtus: ")
-    raamatud[kirje][võti] = väärtus
+    v6ti = raw_input("V6ti: ")
+    v22rtus = raw_input("V22rtus: ")
+    raamatud[kirje][v6ti] = v22rtus
 
 while True:
-    valik=raw_input("1=Muuda\n2=Lisa kirje\n3=Kustuta kirje\n4=Vaata kirjeid\n5=Välju\nVali: ")
+    valik=raw_input("1=Muuda\n2=Lisa kirje\n3=Kustuta kirje\n4=Vaata kirjeid\n5=V2lju\nVali: ")
     if valik=="1":
         print muuda()
     elif valik=="2":
@@ -67,16 +67,3 @@ while True:
     else:
         print "Selline valik puudub"
            
-
-
-
-
-
-
-
-
-
-
-
-
-
